@@ -6,7 +6,7 @@
 #    By: dbourdon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/01/07 12:10:20 by dbourdon          #+#    #+#              #
-#    Updated: 2016/01/07 13:02:26 by dbourdon         ###   ########.fr        #
+#    Updated: 2016/01/07 13:11:18 by dbourdon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,5 +34,6 @@ alias gp='git push'
 alias -g PATH_SAVE='~/libft-/*' PATH_GIT_SAVE='~/git-save/s-libft/'
 
 # Commande pour la save rapide. a la fin de la commande vous vous retrouvez dans PATH_GIT_SAVE
-# copie en force le contenue du dossier recurssivement, ce deplace dans le dossier git, git add, git commit avec le message save et git push
+# copie en force le contenue du dossier recurssivement, ce deplace dans le dossier git, git add,
+# 													 git commit avec le message save et git push
 alias save='cp -fr PATH_SAVE PATH_GIT_SAVE ; cd PATH_GIT_SAVE ; ga *; gc -m "Save"; gp'

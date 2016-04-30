@@ -27,6 +27,7 @@ alias ga='git add'
 alias gst='git status'
 alias gc='git commit'
 alias gp='git push'
+alias gpf='git reset --hard HEAD; git pull'
 
 # Alias pour save rapide : Ce sont des alias global, utilisable aussi en console ex: cd PATH_SAVE
 # 							PATH_SAVE -> dossier du travail save

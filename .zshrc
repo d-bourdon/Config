@@ -6,7 +6,7 @@
 #    By: dbourdon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/01/07 12:10:20 by dbourdon          #+#    #+#              #
-#    Updated: 2016/09/16 14:29:02 by dbourdon         ###   ########.fr        #
+#    Updated: 2016/10/06 13:47:24 by dbourdon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,10 +35,10 @@ alias flux='cd ~/Desktop/; sh install_flux.sh'
 # Alias pour save rapide : Ce sont des alias global, utilisable aussi en console ex: cd PATH_SAVE
 # 							PATH_SAVE -> dossier du travail save
 # 							PATH_GIT_SAVE -> dossier du git ou est save le tout est save
-alias -g PATH_SAVE='~/libft-/*' PATH_GIT_SAVE='~/minishell/'
+alias -g PATH_SAVE='~/libft-/*' PATH_GIT_SAVE='~/fdf/'
 
 # Commande pour la save rapide. a la fin de la commande vous vous retrouvez dans PATH_GIT_SAVE
 # copie en force le contenue du dossier recurssivement, ce deplace dans le dossier git, git add,
 # 													 git commit avec le message save et git push
 # alias save='cp -fr PATH_SAVE PATH_GIT_SAVE ; cd PATH_GIT_SAVE ; ga *; gc -m "Save"; gp'
-save () { cd PATH_GIT_SAVE ; ga .; gc "$*"; gp }
+save () {ga .; gc "$*"; gp }

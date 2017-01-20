@@ -6,7 +6,7 @@
 #    By: dbourdon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/01/07 12:10:20 by dbourdon          #+#    #+#              #
-#    Updated: 2016/10/06 13:47:24 by dbourdon         ###   ########.fr        #
+#    Updated: 2017/01/14 14:26:42 by dbourdon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ gc () { git commit -m "$*" }
 alias gp='git push'
 alias gpf='git reset --hard HEAD; git pull'
 alias flux='cd ~/Desktop/; sh install_flux.sh'
-
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 # Alias pour save rapide : Ce sont des alias global, utilisable aussi en console ex: cd PATH_SAVE
 # 							PATH_SAVE -> dossier du travail save
 # 							PATH_GIT_SAVE -> dossier du git ou est save le tout est save
@@ -42,3 +42,9 @@ alias -g PATH_SAVE='~/libft-/*' PATH_GIT_SAVE='~/fdf/'
 # 													 git commit avec le message save et git push
 # alias save='cp -fr PATH_SAVE PATH_GIT_SAVE ; cd PATH_GIT_SAVE ; ga *; gc -m "Save"; gp'
 save () {ga .; gc "$*"; gp }
+
+# mkdir et cd
+mkcd () {mkdir "$*"; cd "$*" }
+
+# Load Homebrew config script
+source $HOME/.brewconfig.zsh
